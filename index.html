@@ -1,110 +1,242 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أحمد شوقي كمال | مطور تطبيقات وألعاب جوجل بلاي</title>
-    
-    <!-- Google Schema Markup لعرض الهوية كمطور -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "أحمد شوقي كمال",
-      "alternateName": "Ahmed Shawky Kamal",
-      "jobTitle": "مطور تطبيقات وألعاب أندرويد",
-      "url": "https://ahmedshawky.github.io",
-      "sameAs": [
-        "https://play.google.com/store/apps/details?id=com.mindsprint.pointschallenge",
-        "https://www.linkedin.com/in/ahmed-shawky"
-      ],
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Google Play Developer"
-      }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أحمد شوقي كمال محمد | مطور تطبيقات أندرويد - دمياط</title>
+  <meta name="description" content="الموقع الرسمي للمطور أحمد شوقي كمال محمد (Ahmed Shawky Kamal) - مطور تطبيقات وألعاب أندرويد من دمياط، مصر، ومؤسس Mind Sprint على جوجل بلاي.">
+  <meta name="keywords" content="أحمد شوقي كمال, أحمد شوقي كمال محمد, مطور أندرويد دمياط, Ahmed Shawky Kamal, Android Developer Damietta, Mind Sprint">
+  <meta name="author" content="أحمد شوقي كمال محمد">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="أحمد شوقي كمال محمد | مطور أندرويد - دمياط">
+  <meta property="og:description" content="مطور تطبيقات وألعاب أندرويد من دمياط، مصر. مؤسس Mind Sprint على متجر جوجل بلاي.">
+  <meta property="og:image" content="ahmed-shawky-kamal-android-developer-damietta.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "أحمد شوقي كمال محمد",
+    "alternateName": ["أحمد شوقي كمال", "Ahmed Shawky Kamal Mohamed", "Ahmed Shawky"],
+    "jobTitle": "مطور تطبيقات أندرويد (Android Developer)",
+    "description": "مطور تطبيقات وألعاب أندرويد من دمياط، مصر، ومؤسس استوديو Mind Sprint على جوجل بلاي.",
+    "image": "ahmed-shawky-kamal-android-developer-damietta.jpg",
+    "email": "mailto:shaw2280@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "دمياط",
+      "addressCountry": "EG"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Mind Sprint"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/ahmed-shawky-7255888b",
+      "https://mindsprint-games.blogspot.com/"
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --border: #30363d;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --accent: #3ddc84;
+      --accent-hover: #2ec270;
     }
-    </script>
-
-    <!-- Tailwind CSS لتصميم سريع ونظيف -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Cairo', sans-serif; }
-    </style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .hero {
+      text-align: center;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 20px;
+      margin-bottom: 24px;
+    }
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid var(--accent);
+      margin-bottom: 16px;
+      background: #21262d;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+    .subtitle {
+      color: var(--accent);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .location {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+    .bio {
+      color: var(--text);
+      max-width: 620px;
+      margin: 0 auto 20px;
+      font-size: 0.98rem;
+    }
+    .social-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: 0.2s;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #0d1117;
+    }
+    .btn-primary:hover { background: var(--accent-hover); }
+    .btn-outline {
+      border: 1px solid var(--border);
+      color: var(--text);
+      background: #21262d;
+    }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+    .section-title {
+      font-size: 1.3rem;
+      margin-bottom: 16px;
+      padding-right: 10px;
+      border-right: 4px solid var(--accent);
+    }
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .app-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .app-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+      color: #ffffff;
+    }
+    .app-card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+  </style>
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between">
-
-    <!-- Header / Hero Section -->
-    <header class="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 py-16 px-4 text-center border-b border-slate-800">
-        <div class="max-w-3xl mx-auto">
-            <span class="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-4 shadow-md">Google Play Developer</span>
-            <h1 class="text-4xl md:text-5xl font-black mb-3 tracking-tight">أحمد شوقي كمال</h1>
-            <p class="text-lg md:text-xl text-slate-300 font-medium mb-6">مطور تطبيقات وألعاب أندرويد | شغوف بتجربة المستخدم وبرمجة الحلول الذكية</p>
-            <div class="flex justify-center gap-4 flex-wrap">
-                <a href="#apps" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition duration-200">تطبيقاتي وألعابي</a>
-                <a href="https://play.google.com/store/apps/details?id=com.mindsprint.pointschallenge" target="_blank" rel="noopener noreferrer" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition duration-200">عرض لعبتي الأساسية</a>
-            </div>
-        </div>
+<body>
+  <div class="container">
+    <header class="hero">
+      <img
+        src="ahmed-shawky-kamal-android-developer-damietta.jpg"
+        alt="أحمد شوقي كمال محمد - مطور تطبيقات أندرويد في دمياط"
+        class="avatar"
+      >
+      <h1>أحمد شوقي كمال محمد</h1>
+      <div class="subtitle">مطور تطبيقات وألعاب أندرويد | Android Developer</div>
+      <div class="location">📍 دمياط، مصر — مؤسس Mind Sprint</div>
+      <p class="bio">
+        مطور تطبيقات وألعاب أندرويد مستقل، متخصص في بناء التطبيقات التعليمية وألعاب الذكاء والتسالي الخفيفة التي تعمل بدون إنترنت، ومنشورة رسمياً على متجر Google Play تحت اسم Mind Sprint.
+      </p>
+      <div class="social-links">
+        <a href="portofilo.pdf" target="_blank" class="btn btn-primary">عرض البورتفوليو (PDF)</a>
+        <a href="Ahmed_Shawky_cv.pdf" target="_blank" class="btn btn-primary">السيرة الذاتية (CV)</a>
+        <a href="https://www.linkedin.com/in/ahmed-shawky-7255888b" target="_blank" rel="noopener" class="btn btn-outline">حساب LinkedIn</a>
+        <a href="https://mindsprint-games.blogspot.com/" target="_blank" rel="noopener" class="btn btn-outline">مدونة Mind Sprint</a>
+        <a href="mailto:shaw2280@gmail.com" class="btn btn-outline">تواصل عبر البريد</a>
+      </div>
     </header>
 
-    <!-- Main Content / Apps Section -->
-    <main class="container mx-auto px-4 py-12 flex-grow max-w-5xl" id="apps">
-        <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center border-b border-slate-800 pb-4">تطبيقاتي وألعابي على جوجل بلاي</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            
-            <!-- App Card 1 -->
-            <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold mb-2 text-blue-400">اختبر ذكائك تحدى حروف والارقام</h3>
-                    <p class="text-slate-400 text-sm mb-4">لعبة تفاعلية شيقة لتحدي القدرات العقلية واختبار سرعة البديهة في الحروف والارقام.</p>
-                </div>
-                <a href="https://play.google.com/store/apps/details?id=com.mindsprint.pointschallenge" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-blue-600 hover:bg-blue-700 text-center text-white text-sm font-bold py-2 px-4 rounded-xl transition">عرض على المتجر</a>
-            </div>
-
-            <!-- App Card 2 -->
-            <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold mb-2 text-blue-400">اختبارات المرور: رخصة القيادة</h3>
-                    <p class="text-slate-400 text-sm mb-4">تطبيق تعليمي وإرشادي شامل لاجتياز اختبارات إشارات المرور واستخراج الرخصة بكل سهولة.</p>
-                </div>
-                <span class="bg-slate-900 text-xs text-slate-400 px-3 py-1 rounded-lg self-start mt-4">Android App</span>
-            </div>
-
-            <!-- App Card 3 -->
-            <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold mb-2 text-blue-400">تنسيق ألوان الملابس بشياكة</h3>
-                    <p class="text-slate-400 text-sm mb-4">دليلك الذكي لاختيار وتنسيق الألوان والأزياء بإطلالة عصرية أنيقة ومتناسقة.</p>
-                </div>
-                <span class="bg-slate-900 text-xs text-slate-400 px-3 py-1 rounded-lg self-start mt-4">Android App</span>
-            </div>
-
-            <!-- App Card 4 -->
-            <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold mb-2 text-blue-400">مكعبات الحيوانات: Block Puzzle</h3>
-                    <p class="text-slate-400 text-sm mb-4">لعبة ألغاز كلاسيكية ممتعة بدون انترنت، مصممة بعناية لتناسب جميع الأعمار.</p>
-                </div>
-                <span class="bg-slate-900 text-xs text-slate-400 px-3 py-1 rounded-lg self-start mt-4">2D Game</span>
-            </div>
-
-            <!-- App Card 5 -->
-            <div class="bg-slate-800 border border-slate-700 rounded-2xl p-6 shadow-xl flex flex-col justify-between">
-                <div>
-                    <h3 class="text-xl font-bold mb-2 text-blue-400">50 لعبة بدون نت: ذكاء وتسالي</h3>
-                    <p class="text-slate-400 text-sm mb-4">مكتبة ألعاب ضخمة ومتنوعة للاستمتاع بالتسالي وألعاب الذكاء في أي وقت بدون إنترنت.</p>
-                </div>
-                <span class="bg-slate-900 text-xs text-slate-400 px-3 py-1 rounded-lg self-start mt-4">Game Collection</span>
-            </div>
-
+    <section>
+      <h2 class="section-title">أبرز تطبيقاتي على Google Play</h2>
+      <div class="apps-grid">
+        <div class="app-card">
+          <div>
+            <h3>اختبر ذكائك: ألغاز وحروف</h3>
+            <p>لعبة ألغاز عربية ممتعة تعتمد على تحدي النقاط والحروف لتنشيط الذهن.</p>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.mindsprint.pointschallenge" target="_blank" rel="noopener" class="btn btn-outline">عرض على جوجل بلاي</a>
         </div>
-    </main>
 
-    <!-- Footer -->
-    <footer class="bg-slate-950 border-t border-slate-800 py-6 text-center text-slate-500 text-sm">
-        <p>جميع الحقوق محفوظة © 2026 - أحمد شوقي كمال (مطور تطبيقات جوجل بلاي)</p>
+        <div class="app-card">
+          <div>
+            <h3>مكعبات الحيوانات: Block Puzzle</h3>
+            <p>لعبة ذكاء كلاسيكية بلمسة عصرية وتصميم مريح للعين تعمل بدون إنترنت.</p>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.mycompany.blockpuzzle" target="_blank" rel="noopener" class="btn btn-outline">عرض على جوجل بلاي</a>
+        </div>
+
+        <div class="app-card">
+          <div>
+            <h3>اختبارات المرور: رخصة القيادة</h3>
+            <p>تطبيق شامل لاختبارات القيادة وإشارات المرور مع دليل أعطال الطريق.</p>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.mindsprint.traffictest" target="_blank" rel="noopener" class="btn btn-outline">عرض على جوجل بلاي</a>
+        </div>
+
+        <div class="app-card">
+          <div>
+            <h3>50 لعبة بدون نت: ذكاء وتسالي</h3>
+            <p>مجموعة ضخمة من 50 لعبة خفيفة ومتنوعة تعمل بالكامل بدون اتصال بالإنترنت.</p>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.mindsprint.fiftygames" target="_blank" rel="noopener" class="btn btn-outline">عرض على جوجل بلاي</a>
+        </div>
+
+        <div class="app-card">
+          <div>
+            <h3>روضة الأطفال للحروف والأرقام</h3>
+            <p>تطبيق تعليمي تفاعلي بالصوت لتعليم الأطفال الحروف والأرقام بسهولة.</p>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.mindsprint.kindergarten" target="_blank" rel="noopener" class="btn btn-outline">عرض على جوجل بلاي</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 أحمد شوقي كمال محمد (Ahmed Shawky Kamal) — دمياط، مصر. جميع الحقوق محفوظة.
     </footer>
-
+  </div>
 </body>
 </html>
